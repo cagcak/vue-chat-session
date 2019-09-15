@@ -1,0 +1,19 @@
+$dark: rgb(46, 56, 56);
+$light: rgb(212, 222, 224);
+
+$color1: orange;
+$color2: yellowgreen;
+$color3: yellow;
+$color4: red;
+$color5: darkred;
+
+$dotWidth: 10px;
+$dotHeight: 10px;
+$dotRadius: $dotWidth/2;
+
+$dotColor: $color1;
+$dotBgColor: $dotColor;
+$dotBeforeColor: $dotColor;
+$dotAfterColor: $dotColor;
+
+$dotSpacing: $dotWidth + $dotWidth/2;

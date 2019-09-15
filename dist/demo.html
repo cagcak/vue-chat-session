@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <title>chat-session demo</title>
+    <script src="./chat-session.bundle.js"></script>
+</head>
+<body>
+    <chat-session
+        state="true"
+        sender-name="Carol"
+        sender-box-animation="fadeInLeft"
+        recipient-box-animation="fadeInRight"
+        sender-avatar="https://i.pravatar.cc/300?img=1"
+        recipient-avatar="https://i.pravatar.cc/300?img=20"
+        recipient-name="Mia"
+        session-theme=""
+        awaiting-respond-animation="elastic"
+        responded-animation="bounceIn"
+        turn-off-button-info="This button closes the chat session"
+        :chat-style="{ fontFamily: 'Arial' }"
+    ></chat-session>
+    <script>
+        // https://github.com/karol-f/vue-custom-element/issues/127
+        const Chat = window.ChatSession._wrapper.$refs.inner
+        const sampleOverrideData = [
+            {
+                id: 0,
+                sender: {
+                    messages: {
+                        correct: 'Sample correct typed Message from id 0',
+                        close: 'Sample close typed Message from id 0',
+                        wrong: 'Sample wrong typed Message from id 0'
+                    },
+                    status: 0
+                },
+                recipient: {
+                    messages: {
+                        correct: 'Sample correct typed respond from id 0',
+                        close: 'Sample close typed respond from id 0',
+                        wrong: 'Sample wrong typed respond from id 0'
+                    },
+                    status: 0
+                },
+                redirect: {
+                    correct: -1,
+                    close: -1,
+                    wrong: -1
+                },
+                respond: null,
+                feedback: 'Some optional feedback text for id 0',
+                status: 0
+            }
+        ]
+
+        // Chat.sessionData = sampleOverrideData
+        Chat.onCreate = () => {
+            console.log('Callback tick for onCreate')
+        }
+        Chat.onMount = () => {
+            console.log('Callback tick for onMount')
+        }
+        Chat.onUpdate = () => {
+            console.log('Callback tick for onUpdate')
+        }
+        Chat.onDestroyed = () => {
+            console.log('Callback tick for onDestroyed')
+        }
+        Chat.onFinishSession = (redirect, sessions) => {
+            console.log('Callback tick for onFinishSession')
+            console.log(redirect, sessions)
+        }
+    </script>
+</body>
+</html>

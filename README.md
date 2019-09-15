@@ -1,0 +1,1 @@
+Örnek kullanım için ``dist/demo.html`` dosyasını inceleyiniz.
