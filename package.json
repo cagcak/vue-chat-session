@@ -1,7 +1,7 @@
 {
   "name": "vue-chat-simulation",
   "description": "Simple UI chat simulation web component",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "src/components/ChatSession.vue",
   "author": "Çağrı Çakır <cagcak@outlook.com> (https://github.com/cagcak)",
   "private": false,
