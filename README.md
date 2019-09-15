@@ -1,5 +1,7 @@
 # vue-chat-simulation
 
+[![CircleCI](https://circleci.com/gh/cagcak/vue-chat-session/tree/master.svg?style=svg&circle-token=31799c61776b5bae6433ed01f2939367daf20175)](https://circleci.com/gh/cagcak/vue-chat-session/tree/master)
+
 Simple UI chat simulation web component with a sender and a recipient
 
 ![component-visualization](src/assets/chat-session.gif)
