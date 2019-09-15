@@ -1,11 +1,25 @@
 {
-  "name": "chat-simulation",
+  "name": "vue-chat-simulation",
+  "description": "Simple UI chat simulation web component",
   "version": "0.1.1-beta.0",
+  "main": "src/main.js",
+  "author": "Çağrı Çakır <cagcak@outlook.com> (https://github.com/cagcak)",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open ./src/components/ChatSession.vue",
     "build": "vue-cli-service build --target wc --name chat-session ./src/components/ChatSession.vue",
     "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cagcak/vue-chat-session.git"
+  },
+  "keywords": [
+    "vue", "web-component", "chat", "simulation"
+  ],
+  "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/cagcak/vue-chat-session/issues"
   },
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.2.10",
