@@ -4,7 +4,7 @@
   "version": "0.2.0",
   "main": "src/main.js",
   "author": "Çağrı Çakır <cagcak@outlook.com> (https://github.com/cagcak)",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve --open ./src/components/ChatSession.vue",
     "build": "vue-cli-service build --target wc --name chat-session ./src/components/ChatSession.vue",
